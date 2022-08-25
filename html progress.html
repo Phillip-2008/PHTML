@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+		<header>
+			<h1>Most important heading</h1>
+			<h3>Less important heading</h3>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="https://open.spotify.com/playlist/1BOKXJ7BHINHiJ3Yfu9PYH">Spotify</a></li>
+				<li><a href="https://www.youtube.com/">Youtube</a></li>
+		</nav>
+		<article>
+			<h1>The article title</h1>
+			<section>
+				<h1>Heading</h1>
+				<p>Contents on the article elements</p>
+			</section>
+			<aside>
+				<p>Gifts will be deliverd to you in 24 hours </p>
+			</aside>
+		</article>
+			<audio controls autoplay loop>
+			<source src="audio.mp3" type="audio/mpeg">
+			<source src="audio.ogg" type="audio/ogg">
+		</audio>
+
+		Status: <progress min="0" max="55" value="55">
+		</progress>
+		<canvas id="canvas1" width="400" height="300">
+		</canvas>
+		<script>
+			var c=document.getElementById("canvas1");
+			var ctx=c.getContext("2d");
+				ctx.fillStyle = "#FF0000";
+			ctx.fillRect(10,10, 100, 100);
+
+			ctx.rotate( (Math.PI / 180) * 20);  //rotate 25 degrees.
+
+			ctx.fillStyle = "#0000FF";
+			ctx.fillRect(10,10, 100, 100);
+		</script>
+		<hr/>
+		<form action="https://formsubmit.co/phillipdebeer500@gmail.com" method="POST">
+			<input type="text" name="name" required>
+			<input type="email" name="email" required>
+			<input type="text" name="text">
+			<button type="submit">Send</button>
+		</form>
+		
+	</body>
+</html>
